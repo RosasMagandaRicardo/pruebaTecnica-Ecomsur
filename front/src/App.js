@@ -21,10 +21,9 @@ const App = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1> Prueba tecnica front Ecomsur 2021 </h1>{" "}
-      <p> Borra esto y comienza aqui. </p>
+      <h1> Prueba tecnica front Ecomsur 2021 </h1> 
       <ProductListPage />
-      <h5> {response} </h5>{" "}
+      <h5> {response} </h5>
     </div>
   );
 };

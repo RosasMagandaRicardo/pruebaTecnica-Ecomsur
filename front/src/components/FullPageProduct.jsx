@@ -3,11 +3,13 @@ import React from 'react'
 const LOCAL_BACK = "http://localhost:5000";
 
 const FullPageProduct = ({data,addToCart}) => {
+  console.log(data);
  const {_id,name,image,description,brand,category,price,countInStock} = data;
   return (
     <div className="productItem">
       <div className="image-container">
       <img src={`${LOCAL_BACK+image}`} alt={name} />
+      {`${console.log(name)}`}
       </div>
       <div className="information-container">
         <p><span>Product: </span>{" "+name}</p>
