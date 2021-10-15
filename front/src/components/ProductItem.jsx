@@ -30,7 +30,7 @@ const ProductItem = ({ data, addToCart, link }) => {
           <div className="buttons">
             {link}
             <button className="addToCartButton" onClick={() => addToCart(_id)}>
-              <span className="textButtonAdd"> Add to Cart </span>{" "}
+              <span className="textButtonAdd"> Add item to Cart </span>{" "}
             </button>
           </div>
         </div>
