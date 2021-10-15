@@ -20,13 +20,13 @@
 
 ### FUNCIÓN REDUCTORA
 Para ella, tomé en cuenta las acciones que pueden alterar el estado inicial, siguiendo los casos de:
--AÑADIR UN ELEMENTO AL CARRITO:
+- AÑADIR UN ELEMENTO AL CARRITO:
 Dentro de este caso pueden suceder dos cosas: se añade un elemento que no se encontraba en el carrito o se aumenta la cantidad de un elemento si ya se encontraba presente.
--QUITAR UN ELEMENTO AL CARRITO:
+- QUITAR UN ELEMENTO AL CARRITO:
 Dentro de este caso pueden suceder dos cosas: se elimina de uno en uno el elemento que se encuntra en el carrito siempre que la cantidad del mismo sea mayor a uno, o del caso contrario se filtra el elemento del estado eliminando su presencia del carrito.
--QUITAR TODOS LOS ELEMENTOS DE UN MISMO PRODUCTO DEL CARRITO
+- QUITAR TODOS LOS ELEMENTOS DE UN MISMO PRODUCTO DEL CARRITO
 Se filtra el elemento del estado eliminando su presencia del carrito.
--VACIAR EL CARRITO
+- VACIAR EL CARRITO
 Se regresa el estado inicial (ya que el carrito de compras está vacio en un inicio)
 
 ## Descripción de los componentes
