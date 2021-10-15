@@ -1,8 +1,8 @@
 # Prueba tecnica Front Ecomsur 2021
 
 - [Instalar y Correr la aplicación](#instalar-y-correr-la-aplicación)
-- [Descripción de la solución](#descripción-solución)
-- [Descripción de los componentes](#descripción-componentes)
+- [Descripción de la solución](#descripción-de-la-solución)
+- [Descripción de los componentes](#descripción-de-los-componentes)
 
 ## Instalar y Correr la aplicación
 
