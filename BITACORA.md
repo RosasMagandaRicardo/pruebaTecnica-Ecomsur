@@ -36,11 +36,13 @@ Dentro de este componente pretendo mostrar todos los objetos que han sido instan
 ![Componente ProductDisplayPage](/productdisplaypage.png)
 
 - ### `<FullPageProduct/>`
+//INCONCLUSO
 
 - ### `<MiniCart/>`
+//INCONCLUSO
 
 - ### `<ProductItem/>`
-Con este componente me apoyé para simular un producto independiente dentro de todo el catálogo de productos. Presenta toda la información relevante para un usuario, así como un botón que permitirá añadirlo dentro del carro de compras
+Con este componente me apoyé para simular un producto independiente dentro de todo el catálogo de productos. Presenta toda la información relevante para un usuario, así como un botón que permitirá añadirlo dentro del carro de compras.
 ![Componente ProductItem](/product-item.png)
 
 - ### `<CartPage/>`
