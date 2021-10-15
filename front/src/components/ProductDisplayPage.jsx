@@ -8,6 +8,7 @@ import {
 } from "../reducer/shoppingReducer";
 import CartPage from "./CartPage";
 import { TYPES } from "../actions/shoppingAction";
+import MiniCart from "./MiniCart";
 
 const ProductDisplayPage = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
@@ -56,7 +57,8 @@ const ProductDisplayPage = () => {
           ))}
         </div>
       </article>
-    </div>
+      {console.log(carrito.length)}
+    </div>  
   );
 };
 
