@@ -16,7 +16,6 @@ const NavigatorBarra = () => {
         </div>
         <div className="mini-cart">
           <MiniCart/>
-          {console.log(carrito.length)}
         </div>
     </nav>
   );

@@ -15,8 +15,8 @@ const CartPage = ({ data, index, delFromCart}) => {
           <p><span>Price:</span>{" $" + price} / <span>Quantity:</span>{" "+quantity}</p>
           <p><span>Total: </span>{" $"+total}</p>
           <div className="buttons">
-            <button className="deletebtn" onClick={()=>delFromCart(_id)}>Eliminar Uno</button>
-            <button className="deletebtn" onClick={()=>delFromCart(_id,true)}>Eliminar Todos</button>
+            <button className="deleteOnebtn" onClick={()=>delFromCart(_id)}>Delete One</button>
+            <button className="deletebtn" onClick={()=>delFromCart(_id,true)}>Delete All</button>
           </div>
         </div>
       </div>

@@ -44,7 +44,6 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 50vw;
     height: fit-content;
 }
 
@@ -54,8 +53,8 @@ img {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    min-width: 50vw;
     height: fit-content;
+    box-shadow: 0 0 5px 5px #00000025;
 }
 
 .cart-items {
@@ -82,6 +81,7 @@ img {
     padding: 0.5rem;
     background-color: #f7ad00;
     transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 .addToCartButton:active {
@@ -98,6 +98,7 @@ img {
     padding: 0.5rem;
     background-color: #F7CA00;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .addToCartButton .textButtonAdd,
@@ -112,10 +113,65 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.deleteOnebtn {
+    margin: 0.2rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(78, 89, 245);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.deleteOnebtn:active {
+    background-color: rgb(66, 76, 218);
+    transform: translateY(2px);
+    color: #fff;
 }
 
 .deletebtn {
     margin: 0.2rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(243, 61, 61);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.deletebtn:active {
+    background-color: rgb(212, 53, 53);
+    transform: translateY(2px);
+    color: #fff;
+}
+
+.button-clear {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.button-clear button {
+    width: 150px;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    background-color: rgb(61, 110, 243);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 p {

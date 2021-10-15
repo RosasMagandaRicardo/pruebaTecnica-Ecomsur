@@ -25,12 +25,15 @@ No sufrió ninguna modificación, pero dentro del mismo decidí crear un nuevo c
 
 - ### `<ProductListPage/>`
 Corresponde al componente envoltorio, por lo que solo se encarga de renderizar los componentes correspondientes de la barra de navegación y del catálogo y carrito.
+![Componente ProductListPage](/productlistpage.png)
 
 - ### `<NavigatorBarra/>`
 Representa la barra de navegación (para redirigirse al `/home`, y para desplegar el `/MiniCart`; este último representaría un listado de los productos añadidos al carrito).
+![Componente NavigatorBarra](/navigatorbarra.png)
 
 - ### `<ProductDisplayPage/>`
 Dentro de este componente pretendo mostrar todos los objetos que han sido instanciados dentro del estado inicial correspondiente al arreglo `productos[]`, simulando la lista de todos los productos disponibles, gracias a un mapeado del mismo puedo crear dinamicamente el componente necesario para cada producto.
+![Componente ProductDisplayPage](/productdisplaypage.png)
 
 - ### `<FullPageProduct/>`
 
@@ -38,7 +41,8 @@ Dentro de este componente pretendo mostrar todos los objetos que han sido instan
 
 - ### `<ProductItem/>`
 Con este componente me apoyé para simular un producto independiente dentro de todo el catálogo de productos. Presenta toda la información relevante para un usuario, así como un botón que permitirá añadirlo dentro del carro de compras
-![Dependencias](./bitacora-images/product-item.png)
+![Componente ProductItem](/product-item.png)
 
 - ### `<CartPage/>`
 Al igual que `<ProductItem/>` funciona como un producto, pero a diferncia del pasado, este lo hace como si se encontrara ya dentro del carrito de compras, mostrando información aun más sintetizada, teniendo como añadido un contador del total de productos que han sido seleccionados del mismo y su precio total.
+![Componente CartPage](/cartpage.png)

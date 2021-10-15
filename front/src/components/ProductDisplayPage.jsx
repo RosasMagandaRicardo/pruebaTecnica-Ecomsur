@@ -57,7 +57,6 @@ const ProductDisplayPage = () => {
           ))}
         </div>
       </article>
-      {console.log(carrito.length)}
     </div>  
   );
 };
