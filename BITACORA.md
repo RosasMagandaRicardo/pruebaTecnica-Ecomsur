@@ -7,7 +7,7 @@
 ## Instalar y Correr la aplicación
 
 - La única dependencia extra añadida dentro del archivo `package.json` ha sido: `"react-router": "5.2.0"`.
-![Dependencias](https://github.com/RosasMagandaRicardo/pruebaTecnica-Ecomsur/blob/main/dependencias.PNG?raw=true)
+![Dependencias](/dependencias.png)
 
 - De igual manera, una vez ubicado en la carpeta `root` de la aplicacion se corre el comando: `npm install react-router-dom`.
 
