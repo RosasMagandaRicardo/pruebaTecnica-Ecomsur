@@ -15,21 +15,22 @@
 
 ## Descripción de la solución
 
-- He optado por hacer uso del hook `useReducer()` para el manejo de estados, (la lógica del mismo se encuntra dentro del componente `<ProductDisplayPage>`). Por ello, he creado dentro de la carperta `/components` tanto las acciones como el reducer en sus respectivos folders.
-- Dentro de `/reducer/shoppingReducer.js` realicé el consumo de la API local y toda la lógica necesaria para inicializar un objeto `productos` y `carrito` como estados iniciales.
+- He optado por hacer uso del hook `useReducer()` para el manejo de estados, (la lógica del mismo se encuntra dentro del componente `<ProductDisplayPage/>`). Por ello, he creado dentro de la carperta `/components` tanto las acciones como el reducer en sus respectivos folders.
+- Dentro de `/reducer/shoppingReducer.js` realicé el consumo de la API local y toda la lógica necesaria para inicializar un arreglo de `productos` y de `carrito` como estados iniciales.
 
 ## Descripción de los componentes
 
-### `<App/>`
+- ### `<App/>`
 No sufrió ninguna modificación, pero dentro del mismo decidí crear un nuevo componente llamado `<ProductListPage/>`, para representar todo el contenido de la aplicación.
 
-### `<ProductListPage/>`
+- ### `<ProductListPage/>`
 Ya que corresponde al componente envoltorio, separé el contenido en dos componentes: 
-#### (`<NavigatorBarra/>`) 
+#### `<NavigatorBarra/>`
 Representa la barra de navegación (para redirigirse al `/home`, y para desplegar el `/MiniCart`; este último representaría un listado de los productos añadidos al carrito), y
-#### (`<ProductDisplayPage/>`)
+#### `<ProductDisplayPage/>`
 Que corresponde tando al catálogo de los productos y al carrito.
 
-### (`<NavigatorBarra/>`) 
+- ### `<NavigatorBarra/>`
 //INCONCLUSO
-### (`<ProductDisplayPage/>`)
+- ### `<ProductDisplayPage/>`
+Dentro de este componente pretendo mostrar todos los objetos que han sido instanciados dentro del estado inicial correspondiente al arreglo `productos[]`, simulando la lista de todos los productos disponibles, gracias a un mapeado del mismo puedo crear dinamicamente el componente del producto.
