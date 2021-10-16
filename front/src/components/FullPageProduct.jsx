@@ -1,9 +1,11 @@
 import React from 'react'
+import {useParams } from "react-router-dom";
 
 const LOCAL_BACK = "http://localhost:5000";
 
-const FullPageProduct = ({data,addToCart}) => {
- const {_id,name,image,description,brand,category,price,countInStock} = data;
+const FullPageProduct = ({prod,addToCart}) => {
+const {_id,name,image,description,brand,category,price,countInStock} = prod;
+
   return (
     <div className="productItem">
       <div className="image-container">
@@ -18,9 +20,6 @@ const FullPageProduct = ({data,addToCart}) => {
         <p><span>In Stock:</span>{" "+countInStock}</p>
         <button className="addToCartButton" onClick={() => addToCart(_id)}> <span className="textButtonAdd"> Add to Cart </span> </button>
       </div>
-
-      <h2>AQUI VA TODO LO DEL PRODUCTO ALV</h2>
-      
     </div>
   )
 }

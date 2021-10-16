@@ -1,10 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 const LOCAL_BACK = "http://localhost:5000";
 
-const CartPage = ({ data, index, delFromCart}) => {
+const CartPage = ({ data, delFromCart}) => {
   const { _id, name, image, price, quantity } = data;
   const total = (quantity * price).toFixed(2);
+
   return (
     <div className="productItem">
         <div className="image-container">

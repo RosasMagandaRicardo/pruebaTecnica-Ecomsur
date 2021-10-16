@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 
 const LOCAL_BACK = "http://localhost:5000";
 
-const ProductItem = ({ data, addToCart, link }) => {
+const ProductItem = ({ data, addToCart, loadProd}) => {
   const {
     _id,
     name,
@@ -14,6 +14,7 @@ const ProductItem = ({ data, addToCart, link }) => {
     price,
     countInStock,
   } = data;
+  
   return (
     <BrowserRouter>
       <div className="productItem">
@@ -28,7 +29,9 @@ const ProductItem = ({ data, addToCart, link }) => {
           <p><span>Price:</span>{" $" + price}</p>
           <p><span>In Stock:</span>{" " + countInStock}</p>
           <div className="buttons">
-            {link}
+              <Link to={`/product/${_id}`} className="moreInformation" onClick={() => loadProd(_id)}>
+                <span className="textButtonAdd">See More </span>
+              </Link>
             <button className="addToCartButton" onClick={() => addToCart(_id)}>
               <span className="textButtonAdd"> Add item to Cart </span>{" "}
             </button>

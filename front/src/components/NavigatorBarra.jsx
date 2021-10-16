@@ -1,23 +1,37 @@
-import { useReducer } from "react";
 import MiniCart from "./MiniCart";
-import {
-  shoppingInitialState,
-  shoppingReducer,
-} from "../reducer/shoppingReducer";
 
-const NavigatorBarra = () => {
-  const [state] = useReducer(shoppingReducer, shoppingInitialState);
-  const { carrito } = state;
+const NavigatorBarra = ({ carrito }) => {
+
+  const myFunction = () => {
+  var x = document.getElementsByClassName("mini-cart")[0];
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  }
 
   return (
-    <nav className="navbar">
+    <div>
+      <div className="act-des">
+        
+      </div>
+      <nav className="navbar">
+      
         <div className="logo">
-          <h3><a href="/">Logo</a></h3>
+          <h3>
+            <a href="/">Logo</a>
+          </h3>
         </div>
-        <div className="mini-cart">
-          <MiniCart/>
+        <button className="btn-mini-cart" onClick={myFunction}>MINI CART ({carrito.length})</button>
+        
+      </nav>
+      <div className="mini-cart" style={{display: "none"}}>
+          {carrito.map((item, index) => (
+            <MiniCart key={index} data={item} />
+          ))}
         </div>
-    </nav>
+    </div>
   );
 };
 
