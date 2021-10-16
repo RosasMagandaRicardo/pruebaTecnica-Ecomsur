@@ -49,14 +49,14 @@ Dentro de este componente pretendo mostrar todos los objetos que han sido instan
 - ### `<FullPageProduct/>`
 //INCONCLUSO
 
-- ### `<MiniCart/>`
-//INCONCLUSO
-
 - ### `<ProductItem/>`
 Con este componente me apoyé para simular un producto independiente dentro de todo el catálogo de productos. Presenta toda la información relevante para un usuario, así como un botón que permite añadirlo dentro del carro de compras.
 ![Componente ProductItem](/product-item.png)
 
 - ### `<CartPage/>`
 Al igual que `<ProductItem/>` funciona como un producto, pero a diferencia del pasado, este lo hace como si se encontrara ya dentro del carrito de compras, mostrando información aun más sintetizada, teniendo como añadido un contador del total de productos que han sido seleccionados del mismo y su precio total;así como dos botones que permiten eliminar los productos del carrito de compras uno por uno o todos.
-
 ![Componente CartPage](/cartpage.png)
+
+- ### `<MiniCart/>`
+El minicart es una vista que utiliza la misma lógica que el CartPage, ya que cuando un elemento es agregado al carrito, se crea un componenete llamado Minicart por cada elemento almacenado, tomando la información más relevante del producto. El panel puede desplegarse y ocultarse al momento de hacer click en el botón correspondiente.
+![Componente MiniCart](/minicart.png)
